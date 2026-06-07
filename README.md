@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nacional Fiat 128
 
-## Getting Started
+Sitio web oficial de los Encuentros Nacionales de Fiat 128 — eventos anuales que reúnen a fanáticos del Fiat 128 en distintas localidades de Argentina.
 
-First, run the development server:
+## Cómo correr el proyecto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install       # instalar dependencias (solo la primera vez)
+npm run dev       # iniciar servidor de desarrollo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Luego abrí el navegador en **http://localhost:3000**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack
+- **Next.js 16** con App Router
+- **TypeScript** — tipado estático
+- **Tailwind CSS** — utilidades de estilos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Documentación
+Toda la documentación del proyecto está en [`/docs`](./docs/README.md).
 
-## Learn More
+Para retomar el proyecto después de un tiempo, empezá por:
+1. [`/docs/estado-fases.md`](./docs/estado-fases.md) — dónde estamos
+2. [`/docs/bitacora.md`](./docs/bitacora.md) — qué se hizo en cada sesión
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Equipo
+- **Genaro** — desarrollador principal
+- Stack alineado con Marco y Natalia (Zuzon / Training)
