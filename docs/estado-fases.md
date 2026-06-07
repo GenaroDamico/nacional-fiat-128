@@ -19,10 +19,10 @@ Leyenda: ✅ completado · 🟡 en curso · ⬜ pendiente · 🔴 bloqueado
 
 ## Fase 1 — Estructura base del sitio ⬜
 
-- ⬜ Entender la estructura de archivos que creó Next.js
-- ⬜ Limpiar la página de bienvenida de Next.js
-- ⬜ Crear layout con header y footer
-- ⬜ Crear página de inicio con información del próximo encuentro
+- ✅ Entender la estructura de archivos que creó Next.js
+- ✅ Limpiar la página de bienvenida de Next.js
+- ✅ Crear layout con header y footer
+- 🟡 Crear página de inicio con información del próximo encuentro
 - ⬜ Crear página "Historia" con ediciones anteriores
 
 ---
