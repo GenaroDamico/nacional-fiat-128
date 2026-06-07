@@ -30,3 +30,32 @@ Registro de qué se hizo y qué se aprendió en cada sesión.
 ### Pendiente para próxima sesión
 - Entender la estructura de archivos que creó Next.js (qué hace cada archivo)
 - Empezar Fase 1: limpiar la página de bienvenida y crear el layout base
+
+---
+
+## Sesión 1 (continuación) — 2026-06-07
+
+### Qué se hizo
+- Lectura y comprensión de `app/page.tsx` y `app/layout.tsx`
+- Actualización del metadata: título y `lang="es"`
+- Reemplazo del template de Next.js por la página de inicio real
+- Creación del componente `Navbar` en `components/navbar.tsx`
+- Creación del componente `Footer` en `components/footer.tsx`
+- Integración de Navbar y Footer en el layout raíz
+- Creación de la página `/historia`
+- Mejora visual de la home: gradiente, card de próximo encuentro, efectos hover
+
+### Qué se aprendió
+- Qué es un componente y por qué se separa en su propio archivo
+- `export default` — cómo funciona y por qué Next.js lo necesita
+- `children` en el layout — la ranura donde Next.js inserta cada página
+- `Link` vs `<a>` — navegación sin recarga completa
+- `@/` como alias de la raíz del proyecto
+- `flex-1` para empujar el footer al fondo en páginas cortas
+- Gradientes, opacidad con `/`, y `hover:` + `transition-` en Tailwind
+- Separar datos del JSX usando un objeto `const`
+
+### Pendiente para próxima sesión
+- Dar contenido real a la página Historia (lista de ediciones anteriores)
+- Crear página Galería con grilla de fotos
+- Crear página Contacto
