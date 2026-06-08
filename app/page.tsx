@@ -1,4 +1,5 @@
 import FadeIn from "@/components/fade-in";
+import Countdown from "@/components/countdown";
 
 const proximoEncuentro = {
   edicion: "XV",
@@ -56,7 +57,10 @@ export default function Home() {
                   Próximamente
                 </span>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+
+              <Countdown />
+
+              <div className="grid grid-cols-2 mt-6 gap-6">
                 <div className="bg-zinc-900 rounded-xl p-4">
                   <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Sede</p>
                   <p className="text-white font-medium">{proximoEncuentro.sede}</p>
