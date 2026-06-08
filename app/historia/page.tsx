@@ -1,3 +1,5 @@
+import FadeIn from "@/components/fade-in";
+
 const ediciones = [
   { id: 1, año: 2011, sede: "Buenos Aires", provincia: "Buenos Aires" },
   { id: 2, año: 2012, sede: "Rosario", provincia: "Santa Fe" },
@@ -18,35 +20,35 @@ export default function Historia() {
   return (
     <main className="flex-1 bg-zinc-950">
       <div className="max-w-3xl mx-auto px-6 py-24">
-
-        <p className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-4">
-          Historia
-        </p>
-        <h1 className="text-4xl font-bold text-white mb-4">
-          Ediciones anteriores
-        </h1>
-        <p className="text-zinc-400 text-lg mb-16">
-          Desde 2011, cada año la comunidad se reúne en una ciudad distinta de Argentina.
-        </p>
+        <FadeIn>
+          <p className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-4">
+            Historia
+          </p>
+          <h1 className="text-4xl font-bold text-white mb-4">
+            Ediciones anteriores
+          </h1>
+          <p className="text-zinc-400 text-lg mb-16">
+            Desde 2011, cada año la comunidad se reúne en una ciudad distinta de Argentina.
+          </p>
+        </FadeIn>
 
         <div className="flex flex-col gap-3">
-          {ediciones.map((edicion) => (
-            <div
-              key={edicion.id}
-              className="flex items-center justify-between border border-zinc-800 rounded-xl px-6 py-4 hover:border-zinc-600 transition-colors"
-            >
-              <div className="flex items-center gap-6">
-                <span className="text-red-500 font-bold text-lg w-12">
-                  {edicion.año}
-                </span>
-                <span className="text-white font-medium">
-                  {edicion.sede}
+          {ediciones.map((edicion, index) => (
+            <FadeIn key={edicion.id} delay={index * 0.05}>
+              <div className="flex items-center justify-between border border-zinc-800 rounded-xl px-6 py-4 hover:border-zinc-600 transition-colors">
+                <div className="flex items-center gap-6">
+                  <span className="text-red-500 font-bold text-lg w-12">
+                    {edicion.año}
+                  </span>
+                  <span className="text-white font-medium">
+                    {edicion.sede}
+                  </span>
+                </div>
+                <span className="text-zinc-500 text-sm">
+                  {edicion.provincia}
                 </span>
               </div>
-              <span className="text-zinc-500 text-sm">
-                {edicion.provincia}
-              </span>
-            </div>
+            </FadeIn>
           ))}
         </div>
 
