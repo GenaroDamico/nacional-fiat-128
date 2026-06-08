@@ -14,10 +14,20 @@ export default function Contacto() {
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [enviado, setEnviado] = useState(false);
+  const [enviando, setEnviando] = useState(false);
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!nombre || !email || !mensaje) return;
-    setEnviado(true);
+    setEnviando(true);
+
+    const res = await fetch("/api/contacto", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ nombre, email, mensaje }),
+    });
+
+    setEnviando(false);
+    if (res.ok) setEnviado(true);
   }
 
   if (enviado) {
@@ -110,9 +120,9 @@ export default function Contacto() {
               <button
                 onClick={handleSubmit}
                 className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 rounded-xl transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                disabled={!nombre || !email || !mensaje}
+                disabled={!nombre || !email || !mensaje || enviando}
               >
-                Enviar mensaje
+                {enviando ? "Enviando..." : "Enviar mensaje"}
               </button>
             </div>
           </div>

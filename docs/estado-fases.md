@@ -31,9 +31,10 @@ Leyenda: ✅ completado · 🟡 en curso · ⬜ pendiente · 🔴 bloqueado
 
 ## Fase 2 — Contenido y estilos ⬜
 
-- ⬜ Galería de fotos
-- ⬜ Página de contacto
-- ⬜ Responsive design (que se vea bien en celular)
+- ✅ Responsive: verificar en celular
+- ✅ Formulario de contacto funcional (useState)
+- ✅ Animaciones de entrada con Framer Motion
+- ⬜ Galería con fotos reales (pendiente — esperando fotos del cliente)
 
 ---
 
