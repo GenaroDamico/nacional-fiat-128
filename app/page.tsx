@@ -1,7 +1,7 @@
 const proximoEncuentro = {
   edicion: "XV",
   año: 2026,
-  sede: "Por confirmar",
+  sede: "San Martin de los Andes",
   fecha: "Por confirmar",
   descripcion: "Seguí las novedades en nuestras redes.",
 };
