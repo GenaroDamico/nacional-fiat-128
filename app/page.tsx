@@ -3,7 +3,7 @@ import FadeIn from "@/components/fade-in";
 const proximoEncuentro = {
   edicion: "XV",
   año: 2026,
-  sede: "San Martin de los Andes",
+  sede: "San Martin de los Andes - Neuquen",
   fecha: "Por confirmar",
   descripcion: "Seguí las novedades en nuestras redes.",
 };
