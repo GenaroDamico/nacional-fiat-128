@@ -59,3 +59,26 @@ Registro de qué se hizo y qué se aprendió en cada sesión.
 - Dar contenido real a la página Historia (lista de ediciones anteriores)
 - Crear página Galería con grilla de fotos
 - Crear página Contacto
+
+## Sesión 1 (cierre) — 2026-06-07
+
+### Qué se hizo
+- Historia: lista completa de ediciones con `.map()` sobre array de objetos
+- Galería: grilla responsive con efecto hover en cada foto
+- Contacto: info de contacto + formulario visual
+- Actualización de `estado-fases.md`: Fase 1 cerrada, Fase 2 abierta
+
+### Qué se aprendió
+- `.map()` — recorrer un array y devolver JSX por cada elemento
+- `key` en listas — por qué React lo necesita
+- `grid grid-cols-N` — CSS Grid en Tailwind
+- Breakpoints responsive: `sm:` `md:` para distintos tamaños de pantalla
+- `group` y `group-hover:` — aplicar estilos a hijos cuando el padre tiene hover
+- `aspect-square` — mantener proporción cuadrada sin fijar alto y ancho
+- `focus:` — estilos cuando un campo de formulario está activo
+- Formulario visual sin lógica (envío con `useState` queda para Fase 2)
+
+### Pendiente para próxima sesión
+- Fase 2: fotos reales en galería
+- Formulario de contacto funcional (useState)
+- Verificar responsive en celular
